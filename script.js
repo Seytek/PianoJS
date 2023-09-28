@@ -27,9 +27,11 @@ keys.forEach(element => {
 function playNote(key) {
     const noteAudio = document.getElementById(key.dataset.note);
     noteAudio.play();
-    
+    noteAudio.currentTime = 0; // this makes possible to play it faster
+
+
     key.classList.add('active');
-    key.addEventListener('click', () => {
+    noteAudio.addEventListener('ended', () => {
         key.classList.remove('active');
     })
 }
