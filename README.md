@@ -1,3 +1,3 @@
 # PianoJS
 
-https://seytek.github.io/pianoJS/
+https://seytek.github.io/PianoJS/
