@@ -1,0 +1,40 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: bisque;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.piano {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.key {
+    border: 2px solid black;
+}
+.white {
+    width: 100px;
+    background-color: white;
+    height: 100%;
+}
+.black {
+    width: 70px;
+    background-color: black;
+    height: 50%;
+    margin-right: -35px;
+    margin-left: -35px;
+    z-index: 999;
+}
+.black.active {
+    background-color: rgb(76, 76, 76);
+}
+.white.active {
+    background-color: rgb(220, 220, 220);
+}
